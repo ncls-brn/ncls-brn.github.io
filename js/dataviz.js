@@ -27,7 +27,7 @@ let issIcon = L.icon({
 let marker = L.marker([48.856614, 2.3522219], { icon: issIcon });
 
 async function callIss() {
-  let response = await fetch("http://api.open-notify.org/iss-now.json");
+  let response = await fetch("https://api.wheretheiss.at/v1/satellites/25544.json");
   if (response.ok) {
     // if HTTP-status is 200-299
     // get the response body and parse it => json object
