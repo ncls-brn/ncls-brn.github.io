@@ -33,8 +33,8 @@ async function callIss() {
     // get the response body and parse it => json object
     map.removeLayer(marker);
     let json = await response.json();
-    let lat = json.iss_position.latitude;
-    let lon = json.iss_position.longitude;
+    let lat = json.latitude;
+    let lon = json.longitude;
 
     // geolocalize iss with lat and long and the icon
     marker = L.marker([lat, lon], { icon: issIcon });
