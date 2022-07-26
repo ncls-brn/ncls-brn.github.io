@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projet Dataviz !</title>
+        <link rel="stylesheet" href="../css/dataviz.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin=""/> 
+        <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>
+    </head>
+
+    <body>
+        <div id="spacecaroussel">
+            <div class="images">
+                <a href="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/iss067e000260.jpg"><img src="../img-header/issmini.jpg" alt="iss" title="Cliquez pour agrandir" /></a>
+                <a href="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/iss067e176745.jpg"><img src="../img-header/brazilmini.jpg" alt="brazil" title="Cliquez pour agrandir" /></a>
+                <a href="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/iss067e124188.jpg"><img src="../img-header/sunmini.jpg" alt="sun" title="Cliquez pour agrandir" /></a>
+                <a href="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/iss067e160629.jpg"><img src="../img-header/armmini.jpg" alt="arm" title="Cliquez pour agrandir" /></a>
+                <a href="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/iss067e133437.jpg"><img src="../img-header/borealmini.jpg" alt="boreal" title="Cliquez pour agrandir" /></a>
+                <a href="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/iss067e149384.jpg"><img src="../img-header/caspianmini.jpg" alt="caspian" title="Cliquez pour agrandir" /></a>
+                <a href="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/iss067e089285.jpg"><img src="../img-header/deltamini.jpg" alt="delta" title="Cliquez pour agrandir" /></a>
+                <a href="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/iss067e099355.jpg"><img src="../img-header/zvezdamini.jpg" alt="zvezda" title="Cliquez pour agrandir" /></a>
+            </div>
+        </div>
+        
+  
+        <h1><strong> Welcome to Space</strong></h1>
+        <h2> where everything is possible</h2>
+        <p>Hello everyone and welcome to<strong> SPACE </strong> ! <br>
+        We are offering you to follow the ISS all around the globe and more... Patience, soon you'll be able to travel in the universe! 
+        </p>
+        
+        
+
+        <div id="map" ></div>
+
+        <input type="text" id="champ" >
+        <button id="btn">SEARCH</button>
+        
+        <div id="output"></div>
+        <h1>NASA Astronomy Picture Of The Day</h1>
+        <h2 id="title"></h2>
+        <h3>Date: <span id="date"class= "centrer"></span></h3>
+        <img id="pic" src="" alt="NASA Picture Of The Day" width="570" class="centrer">
+        <p id="explanation"></p>
+
+        
+
+        <script src="dataviz.js"></script>
+    </body>
+</html>
+
+   

@@ -1,0 +1,94 @@
+/* projet dataviz */
+h1 {
+    color: rgb(206,206,206);
+    text-align: center;
+    font-family: monospace;
+}
+
+button,input{
+    height:20px; 
+    width:100px; 
+    margin: auto ; 
+    position:relative;
+    top:50%; 
+    left:50%;
+}
+
+#map { 
+    height:768px;
+    width:768px;
+    align-items:center;
+    margin: auto;
+}
+.centrer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+#pic { 
+    align-items:center;
+    margin: auto;
+}
+
+h2 {
+    color:rgb(206,206,206) ;
+    font-style: italic;
+    text-align: center;
+    font-family: monospace;
+} 
+
+head {
+    background-color: rgb(15, 5, 107);
+}
+
+body {
+    background-color: rgb(15, 5, 107);
+    
+}
+
+p {
+    color: azure;
+    font-size: large;
+    font-family: monospace;
+    text-align: center;
+}
+.images {
+    display: flex ;
+    align-items: center;
+    animation-duration: 30s;
+    animation-name: mesImages;
+    animation-iteration-count: infinite;
+}
+
+#spacecaroussel {
+    overflow: auto;
+}
+@keyframes mesImages {
+    0%{transform: translateX(0);}
+    15%{transform: translateX(-400px);}
+    30%{transform: translateX(-640px);}
+    45%{transform: translateX(-1280px);}
+    60%{transform: translateX(-1480px);}
+    75%{transform: translateX(-1280px);}
+    90%{transform: translateX(-640px);}
+    90%{transform: translateX(-400px);}
+}
+
+h3,h4,h5 {
+    text-align: center;
+    font-family: monospace;
+    color:aliceblue;
+}
+
+.centrer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#map { 
+    height:768px;
+    width:768px;
+    margin: auto;
+}
