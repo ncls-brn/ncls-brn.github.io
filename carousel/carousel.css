@@ -65,7 +65,7 @@ a:hover{
   max-width:auto;
   max-height:auto;
   background-repeat:no-repeat;
-  background-image: url('../img-header/iss.jpg') ;
+  background-image: url('img-header/iss.jpg') ;
   background-size: cover;
 }
 
@@ -114,6 +114,7 @@ a:hover{
   height:768px;
   width:768px;
   margin:auto;
+  text-align:center;
 }
 
 #dateUser {
@@ -164,5 +165,93 @@ hr {
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
+  }
+}
+
+@media (max-width:400px) {
+  iframe {
+    height:186px;
+    width:264px;
+    margin:0 auto;
+    text-align:center;
+  }
+  #pic {
+    width:264px;
+    margin:auto;
+    text-align:center;
+  }
+}
+@media (min-width:400px) and (max-width:520px) {
+  iframe {
+    height:186px;
+    width:264px;
+    margin:0 auto;
+    text-align:center;
+  }
+  #pic {
+    width:380px;
+    margin:auto;
+    text-align:center;
+  }
+}
+@media (min-width:520px) and (max-width:768px) {
+  iframe {
+    height:250px;
+    width:492px;
+    margin:0 auto;
+    text-align:center;
+  }
+  #pic {
+    width:500px;
+    margin:auto;
+    text-align:center;
+  }
+}
+
+@media (min-width:992px) and (max-width:1200px){
+  iframe {
+    height:375px;
+    width:550px;
+  }
+}
+@media (max-width: 576px) {
+  #map {
+    height:256px;
+    width:256px;
+    margin:0 auto;
+    text-align:center;
+  }
+}
+@media (min-width:577px) and (max-width: 1200px) {
+  #map {
+    height:512px;
+    width:512px;
+    margin:0 auto;
+    text-align:center;
+  }
+}
+@media (min-width:1200px) and (max-width: 1400px) {
+  #map {
+    height:640px;
+    width:640px;
+    margin:0 auto;
+    text-align:center;
+  }
+}
+/*for the h1.navbar-brand*/
+@media (max-width: 360px) {
+  h1.navbar-brand  {
+    font-size: 10px;
+  }
+}
+
+@media (min-width:361px) and (max-width: 515px) {
+  h1.navbar-brand  {
+  font-size: 12px;
+ }   
+}
+@media (max-width:992px){
+  .ctr{
+    text-align:center;
   }
 }
