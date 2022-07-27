@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.101.0">
+  <title>PROJET DATAVIZ</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin="">
+    </script>
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/carousel.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
+      <h1 class="navbar-brand ">&nbsp;&nbsp;&nbsp;WELCOME TO SPACE... WHERE EVERYTHING'S POSSIBLE</h1>
+
+  </header>
+
+  <main>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <!--ISS-->
+        <div class="carousel-item active imgISS">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>ISS geolocalization</h1>
+              <p>Come and see where is the International Space Station <br> and how it moves around Earth !
+              </p>
+              <p><a class="btn btn-lg btn-primary " href="#iss">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <!--APOD-->
+        <div class="carousel-item imgAPOD">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>NASA Astronomy Pic Of the Day</h1>
+              <p>To infiny and beyond... 🚀</p>
+              <p><a class="btn btn-lg btn-primary" href="#apod">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <!--live-->
+        <div class="carousel-item imgLive">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>NASA go live !</h1>
+              <p><a class="btn btn-lg btn-primary" href="#live">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing" id="iss">
+      <!-- START THE FEATURETTES -->
+
+      <!--MAP-->
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+          <h2 class="featurette-heading fw-normal lh-1">Come closer my friend... <br> <span class="text-muted">It’ll blow
+              your mind.</span></h2>
+          <p class="lead"> And now, what you've all been waiting for : the one and only ISS on the Earth map. Crazy, right ?!</p>
+        </div>
+        <div class="ctr col-12 col-sm-12 col-md-12 col-lg-7">
+          <div id="map"></div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" id="apod">
+      <!--PIC APOD-->
+      <div class="row featurette" >
+        <div class="col-12 col-sm-12 col-md-12 col-lg-5 order-md-2 order-lg-2">
+          <h2 class="featurette-heading fw-normal lh-1">NASA Astronomy Picture Of The Day <span class="text-muted"
+              id="title"></span></h2>
+          <p class="lead"> Date : <span id="date"></span><br>
+          </p>
+        </div>
+
+        <div class="ctr col-12 col-sm-12 col-md-12 col-lg-7 order-md-1 order-lg-1">
+          <label for="dateUser"></label>
+          <input type="date" id="dateUser" min="1995-06-16">
+          <button id="btn" class="btn btn-sm btn-primary">Search</button><br><br>
+          <img id="pic" src="" alt="NASA Picture Of The Day" width="550">
+        </div>
+      </div><br>
+      <p class="lead" id="explanation"></p>
+
+      <!--VIDEO YOU TUBE-->
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+          <h2 class="featurette-heading fw-normal lh-1" id="live" >And last but not least <br> <span class="text-muted">Check this one, mate !</span>
+          </h2>
+          <p class="lead">You've seen it on a map, on TV, on the NASA website, but have you seen it both live and on the map ??? We've reached a new level of technology. Careful NASA scientists, Clem, Nico and Dede are coming for you ! </p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+          <div class="ctr"><iframe width="660" height="415" src="https://www.youtube.com/embed/86YLFOog4GM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+      </div>
+
+      
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+    <!-- FOOTER -->
+    <footer class="container1">
+      <p class="float-end"><a href="#">Back to top</a> &nbsp;&nbsp;&nbsp;</p>
+      <p>&nbsp;&nbsp;&nbsp;&copy;2022 NDC Team, Ada Tech School, Paris &middot;</p>
+    </footer>
+  </main>
+
+  <script src="js/dataviz.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

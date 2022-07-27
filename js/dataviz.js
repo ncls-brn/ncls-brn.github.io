@@ -24,10 +24,10 @@ let latlngs = [],
   latlngs2 = [];
 
 let issIcon = L.icon({
-  iconUrl: "../img-icon/iss.png",
+  iconUrl: "./img-icon/iss.png",
   iconSize: [33, 30], // size of the icon => width/height
 });
-let marker = L.marker([48.856614, 2.3522219], { icon: issIcon });
+let marker = L.marker([48.856614, 2.3522219], {icon: issIcon});
 
 //set map zoom and view according to zoom clientwidth
   // tablets are between 768 and 922 pixels wide
@@ -76,14 +76,14 @@ window.addEventListener('resize', function(event){
 });
 
 async function callIss() {
-  let response = await fetch("http://api.open-notify.org/iss-now.json");
+  let response = await fetch("https://api.wheretheiss.at/v1/satellites/25544");
   if (response.ok) {
     // if HTTP-status is 200-299
     // get the response body and parse it => json object
     map.removeLayer(marker);
     let json = await response.json();
-    let lat = json.iss_position.latitude;
-    let lon = json.iss_position.longitude;
+    let lat = json.latitude;
+    let lon = json.longitude;
 
     // geolocalize iss with lat and long and the icon
     marker = L.marker([lat, lon], {icon: issIcon});
@@ -169,4 +169,3 @@ let myDate = today();
 dateHTML.onchange = () => (myDate = dateHTML.value);
 
 btn.onclick = imgOnClick;
-

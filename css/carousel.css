@@ -1,0 +1,257 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+.navbar-dark {
+  background-image: url('../img-header/fun.jpg');
+}
+
+.navbar-brand {
+  color: rgb(255, 255, 255)!important;
+  font-style: italic;
+  font-weight: bold;
+  font-size: large;
+}
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #d83782;
+  background-image: url('../img-header/fun.jpg');
+  background-repeat:round;
+}
+
+.navbar-brand {
+  color: rgb(212, 219, 225);
+}
+.text-muted {
+  color: rgb(63, 202, 172)!important;
+}
+
+.lead { 
+  color: rgb(212, 219, 225);
+  text-align: justify;
+}
+
+a {
+  color: rgb(212, 219, 225);
+}
+a:hover{
+  color:rgb(63, 202, 172)!important;
+}
+.container1 {
+  color: rgb(212, 219, 225);
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+
+.imgISS {
+  max-width:auto;
+  max-height:auto;
+  background-repeat:no-repeat;
+  background-image: url('../img-header/iss.jpg') ;
+  background-size: cover;
+}
+
+.imgAPOD {
+  max-width:auto;
+  max-height:auto;
+  background-repeat:no-repeat;
+  background-image: url('../img-header/nicoco.jpg') ;
+  background-size: cover;
+}
+
+.imgLive {
+  max-width:auto;
+  max-height:auto;
+  background-repeat:no-repeat;
+  background-image: url('../img-header/caspian.jpg') ;
+  background-size: cover;
+}
+
+.btn-primary {
+  color: #010101;
+  border-color: rgb(63, 202, 172);
+  background-color: rgb(63, 202, 172);
+}
+
+/* MARKETING CONTENT
+
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+#map { 
+  height:768px;
+  width:768px;
+  margin:auto;
+  text-align:center;
+}
+
+#dateUser {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-radius: 4px;
+}
+#btn{
+  border:0px;
+  padding-bottom: 3px !important;
+}
+.btn:hover {
+  color: rgb(63,202,172)!important;
+  border-color: rgb(22,71,60);
+  background-color: rgb(22,71,60)!important;
+}
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+hr {
+  border-top: 0px solid;
+  opacity: 1;
+}
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* rtl:end:remove */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+@media (max-width:400px) {
+  iframe {
+    height:186px;
+    width:264px;
+    margin:0 auto;
+    text-align:center;
+  }
+  #pic {
+    width:264px;
+    margin:auto;
+    text-align:center;
+  }
+}
+@media (min-width:400px) and (max-width:520px) {
+  iframe {
+    height:186px;
+    width:264px;
+    margin:0 auto;
+    text-align:center;
+  }
+  #pic {
+    width:380px;
+    margin:auto;
+    text-align:center;
+  }
+}
+@media (min-width:520px) and (max-width:768px) {
+  iframe {
+    height:250px;
+    width:492px;
+    margin:0 auto;
+    text-align:center;
+  }
+  #pic {
+    width:500px;
+    margin:auto;
+    text-align:center;
+  }
+}
+
+@media (min-width:992px) and (max-width:1200px){
+  iframe {
+    height:375px;
+    width:550px;
+  }
+}
+@media (max-width: 576px) {
+  #map {
+    height:256px;
+    width:256px;
+    margin:0 auto;
+    text-align:center;
+  }
+}
+@media (min-width:577px) and (max-width: 1200px) {
+  #map {
+    height:512px;
+    width:512px;
+    margin:0 auto;
+    text-align:center;
+  }
+}
+@media (min-width:1200px) and (max-width: 1400px) {
+  #map {
+    height:640px;
+    width:640px;
+    margin:0 auto;
+    text-align:center;
+  }
+}
+/*for the h1.navbar-brand*/
+@media (max-width: 360px) {
+  h1.navbar-brand  {
+    font-size: 10px;
+  }
+}
+
+@media (min-width:361px) and (max-width: 515px) {
+  h1.navbar-brand  {
+  font-size: 12px;
+ }   
+}
+@media (max-width:992px){
+  .ctr{
+    text-align:center;
+  }
+}
